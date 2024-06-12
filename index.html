@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+
+        <h1>Weather.io</h1>
+        <div class="tab-container">
+            <div class="tab" id="yourweath">YOUR WEATHER</div>
+            <div class="tab" id="searchweath">SEARCH WEATHER</div>
+        </div>
+
+        <img class="error" src="blue-screen.png" height="160px" width="160px" loading="lazy">
+
+
+        <!-- grant-accesshtml -->
+        <div class="weather-infocontainer">
+
+            <div class="maingraset grant-loca">
+                <img src="location.png" height="80px" width="80px" loading="lazy">
+                <h1>Grant Location Access</h1>
+                <p>Allow access to get weather information</p>
+                <button class="grantaccbuttton">GRANT ACCESS</button>
+            </div>
+
+
+        <!-- searchbar-html -->
+        <form class="search-bar">
+            <input placeholder="Type To Search A City..." class="typebox">
+            <button type="submit">
+                <img src="search.png" height="20px" width="20px" loading="lazy">
+            </button>
+        </form>
+
+        <!-- loading-screen -->
+        <div class="loading">
+            <img src="loading.gif.gif" height="150px" width="150px" loading="lazy">
+            <p>Loading</p>
+        </div>
+
+        <!-- weather-sh0wing -->
+        <div class="show-weather">
+            <div class="name">
+                <p class="cityname"></p>
+                <img class="flag"> 
+            </div>
+
+            <p class="temp-descri"></p>
+            <img class="decri-img">
+
+            <p class="temp-incelci"></p>
+
+            <div class="cards">
+                <div class="windspeed">
+                    <img class="imges" src="wind.png" height="80px" width="80px" loading="lazy">
+                    <p class="txt">WINDSPEED</p>
+                    <p class="values windsptxt"></p>
+                </div>
+
+                <div class="humidity">
+                    <img class="imges2" src="humidity.png" height="80px" width="80px" loading="lazy">
+                    <p class="txt">HUMIDITY</p>
+                    <p class="values humitxt"></p>
+                </div>
+
+                <div class="clouds">
+                    <img class="" src="cloud.png" height="80px" width="80px" loading="lazy">
+                    <p class="txt">CLOUDS</p>
+                    <p class="values cloudtxt"></p>
+                </div>
+            </div>
+
+
+        </div>
+            
+
+
+
+        </div>
+    </div>   
+    <script src="main.js"></script>
+</body>
+</html>
