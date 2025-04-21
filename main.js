@@ -8,12 +8,12 @@ const grantbutton=document.querySelector(".grantaccbuttton")
 const searchbox=document.querySelector(".typebox")
 const errmsg=document.querySelector(".error")
 
-let oldtab=urweather
+let oldtab=urweather //urweather is nothing but text in html of that navbar
 const API_KEY = "e51c969d9bfcca8a9d19895f692b3869";
-oldtab.classList.add("current-tab") //adds css property
+oldtab.classList.add("current-tab") //adds css property for urweather
 
-function switchtab (newtab){
-    if(oldtab!=newtab){
+function switchtab (newtab){ // new tab as parameter
+    if(oldtab!=newtab){//Checks if the new tab is different from the current tab/old tab 
         oldtab.classList.remove("current-tab");
         oldtab=newtab;
         oldtab.classList.add("current-tab");
