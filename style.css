@@ -1,0 +1,285 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+.m-plus-rounded-1c-regular {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+.wrapper{
+    background: linear-gradient(313deg, rgba(66,96,94,1) 0%, rgba(82,128,124,1) 41%);
+    width: 100%;
+    height: 100vh;
+    color: white;
+}
+  
+h1{
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 20px;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.tab-container{
+    display: flex;
+    max-width: 500px;
+    justify-content: space-between;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+
+.tab{
+    font-size: 1rem;
+    padding: 5px 8px;
+
+}
+
+.grantaccbuttton{
+    background-color:  rgba(211, 211, 211, 0.5);
+    border: 0cap;
+    padding: 8px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    
+
+}
+.grantaccbuttton:hover {
+    background-color: rgba(255, 255, 255, 0.6); /* white with 80% opacity */
+}
+
+
+
+.grant-loca{
+    display: none;
+}
+.grant-loca.active{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-block: 20px;
+    padding-top: 8rem;
+    gap: 10px;
+
+}
+
+.typebox {
+    background-color: rgba(211, 211, 211, 0.5);
+    border: none;
+    padding: 8px;
+    border-radius: 5px ;
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+    outline: none; /* Remove the default outline */
+}
+
+.typebox::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Light white color for placeholder text */
+}
+
+.search-bar button {
+    background-color: rgba(211, 211, 211, 0.5);
+    border: none;
+    padding: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar button img {
+    height: 28px;
+    width: 28px;
+}
+
+.search-bar button:hover{
+    background-color: rgba(255, 255, 255, 0.6); /* white with 80% opacity */
+   
+}
+
+.search-bar{
+    display: none;
+}
+.search-bar.active{
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.loading{
+    display: none;
+}
+
+.loading.active{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10rem;
+    
+}
+
+.loading p{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: larger;
+}
+
+
+.name{
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    margin-top: 8rem;
+}
+.cityname{
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 2rem;
+
+}
+.flag{
+    height: 25px;
+    width: 30px;
+}
+
+
+
+.show-weather{
+    display: none;
+}
+
+.show-weather.active{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.temp-descri{
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+.decri-img{
+    height: 80px;
+    width: 80px;
+}
+.cards{
+    display: flex;
+    gap: 20px;
+    margin-top: 3rem;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.windspeed{
+    background-color: rgba(64, 64, 64, 0.5);
+    padding: 30px;
+    padding-left: 70px;
+    padding-right: 70px;
+    border-radius: 5px;
+}
+
+.humidity{
+    background-color: rgba(64, 64, 64, 0.5);
+    padding: 30px;
+    padding-left: 70px;
+    padding-right: 70px;
+    border-radius: 5px;
+}
+
+
+.clouds{
+    background-color: rgba(64, 64, 64, 0.5);
+    padding: 30px;
+    padding-left: 70px;
+    padding-right: 70px;
+    border-radius: 5px;
+}
+
+.txt{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+.values{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.imges{
+    text-align: center;
+    padding-left: 1.7rem;
+}
+.imges2{
+    padding-left: 1rem;
+}
+
+.temp-incelci{
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.error{
+    display: none;   
+}
+
+.error.active{
+    display: flex;
+    justify-content: center;  /* Centers the content horizontally */
+    align-items: center;      /* Centers the content vertically */
+    position: fixed;       /* Position the error message fixed to the viewport */
+    top: 50%;              /* Center it vertically */
+    left: 50%;             /* Center it horizontally */
+    transform: translate(-50%, -50%);  /* Offset it by 50% to truly center it */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tab.current-tab{
+    background-color:  rgba(211, 211, 211, 0.5); /* lightgray with 50% opacity */
+    padding: 5px;
+    border-radius: 5px;
+}
+.tab.current-tab:hover {
+    background-color: rgba(255, 255, 255, 0.6); /* white with 80% opacity */
+}
+
+
+.search-bar.active{
+    opacity: 100;
+}
